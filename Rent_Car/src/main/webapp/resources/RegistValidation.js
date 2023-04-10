@@ -1,10 +1,10 @@
 function checkValues(htmlForm) {
-	let url = "regist?&";
+	let url = "regist?";
 
 	const client_id = document.getElementById("client_id").value;
 	const client_pw = document.getElementById("client_pw").value;
 	const client_name = document.getElementById("client_name").value;
-	const clien_phone = document.getElementById("client_phone").value;
+	const client_phone = document.getElementById("client_phone").value;
 
 	let check = true;
 

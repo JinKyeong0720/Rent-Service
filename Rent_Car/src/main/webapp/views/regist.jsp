@@ -22,10 +22,11 @@
 	<section>
 		<h2>회원가입</h2>
 		<form method="POST" action="../service">
+		<input type="hidden" name="command" value="regist">
 			<table border="1">
 				<tr>
 					<th>아이디</th>
-					<td><input type="text" placeholder="아이디를 입력하세요" id="id"
+					<td><input type="text" placeholder=" 아이디를 입력하세요 " id="client_id"
 						name="id" value="<%=id != null ? id : ""%>"
 						<%=id == null ? "autofocus" : ""%>>
 					</td>
@@ -33,7 +34,7 @@
 
 				<tr>
 					<th>비밀번호</th>
-					<td><input type="password" placeholder="비밀번호를 입력하세요" id="pw"
+					<td><input type="password" placeholder=" 비밀번호를 입력하세요 " id="client_pw"
 						name="pw" value="<%=pw != null ? pw : ""%>"
 						<%=pw == null ? "autofocus" : ""%>>
 					</td>
@@ -41,7 +42,7 @@
 
 				<tr>
 					<th>이름</th>
-					<td><input type="text" placeholder="이름를 입력하세요" id="name" name="name"
+					<td><input type="text" placeholder=" 이름를 입력하세요 " id="client_name" name="name"
 						value="<%=name != null ? name : ""%>"
 						<%=name == null ? "autofocus" : ""%>>
 					</td>
@@ -49,7 +50,7 @@
 
 				<tr>
 					<th>전화번호</th>
-					<td><input type="text" placeholder="전화번호를 입력하세요" id="phone"
+					<td><input type="text" placeholder=" 전화번호를 입력하세요 " id="client_phone"
 						name="phone" value="<%=phone != null ? phone : ""%>"
 						<%=phone == null ? "autofocus" : ""%>>
 					</td>
@@ -58,7 +59,7 @@
 			<input type="button" value="회원가입" onclick="checkValues(form)">
 		</form>
 	</section>
-	<script src="../resources/validation.js" charset="UTF-8"></script>
+	<script src="../resources/RegistValidation.js" charset="UTF-8"></script>
 </body>
 
 <jsp:include page="footer"/>

@@ -4,7 +4,7 @@
 <html>
 <body>
 	<footer>
-		<p>footer</p>]
+		<p>footer</p>
 	</footer>
 </body>
 </html>

@@ -11,11 +11,12 @@
 <jsp:include page="header" />
 <body>
 	<h2>메인화면</h2>
-	
+
 	<%
+		DBManager.getConnectionFromMySQL();
 		ClientDao clientDao = ClientDao.getInstance();
-		//Client client = clientDao.getClientById("1");
-		//session.setAttribute("log", client);
+		Client client = clientDao.getClientById("1");
+		session.setAttribute("log", client);
 	%>
 
 </body>

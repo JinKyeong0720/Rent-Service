@@ -1,6 +1,7 @@
 package controller;
 
 import controller.action.Action;
+import controller.action.LoginAction;
 import controller.action.RegistAction;
 
 public class ActionFactory {
@@ -15,7 +16,8 @@ public class ActionFactory {
 		
 		if(command.equals("regist"))
 			action = new RegistAction();
-//		else if() 
+		else if(command.equals("login"))
+			action = new LoginAction();
 			
 		
 		

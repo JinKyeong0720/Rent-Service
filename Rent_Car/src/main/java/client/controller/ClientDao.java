@@ -75,7 +75,7 @@ public class ClientDao {
 		return list;
 	}
 
-	public Client getClientVyId(String client_id) {
+	public Client getClientById(String client_id) {
 		Client client = null;
 		this.conn = DBManager.getConnectionFromMySQL();
 		if (this.conn != null) {

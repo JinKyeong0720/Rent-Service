@@ -20,16 +20,16 @@ nav {
 	display: flex; 
 	flex-direction : column;
 	justify-content: center;
-	background-color: lightblue;
+	background-color: lightgray;
 }
 
 section {
-	background-color: smokewhite;
+	background-color: #FFFACD;
 }
 
 footer {
 	color: white;
-	background-color: grey;
+	background-color: lightblue;
 }
 
 h1 {
@@ -60,7 +60,7 @@ footer>p {
 
 table {
 	margin: auto;
-	border: 1px solid blue;
+	border: 1px solid black;
 	border-collapse: collapse;
 }
 
